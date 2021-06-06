@@ -13,8 +13,8 @@ RUN mkdir /weather_bot; \
 
 # Copy files
 COPY /src/* /weather_bot/src/
-COPY /start_bot.sh /weather_bot/start_bot.sh
-COPY /collect_stat.sh /weather_bot/collect_stat.sh
+COPY /src/start_bot.sh /weather_bot/start_bot.sh
+COPY /src/collect_stat.sh /weather_bot/collect_stat.sh
 
 # Chmod scripts
 RUN chmod +x /weather_bot/*.sh
